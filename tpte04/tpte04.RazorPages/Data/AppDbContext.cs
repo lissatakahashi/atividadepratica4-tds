@@ -1,0 +1,25 @@
+using Microsoft.EntityFrameworkCore;
+using tpte04.RazorPages.Model;
+
+namespace tpte04.RazorPages.Data {
+    public class AppDbContext : DbContext
+    {
+        public DbSet<CursoModel>? Cursos { get; set; }
+        public DbSet<AlunoModel>? Alunos { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite("DataSource=tds.db;Cache=Shared");
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<CursoModel>().ToTable("Cursos").HasKey(c => c.IdCurso);
+            modelBuilder.Entity<CursoModel>().Property(c => c.IdCurso).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<AlunoModel>().ToTable("Alunos").HasKey(a => a.IdAluno);
+            modelBuilder.Entity<AlunoModel>().Property(a => a.IdAluno).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<CursoModel>()
+                .HasMany(c => c.Alunos)
+                
+        }
+    }
+}
