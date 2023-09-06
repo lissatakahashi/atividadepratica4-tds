@@ -4,6 +4,5 @@ namespace tpte04.RazorPages.Model {
         public string? NomeAluno { get; set; }
         public string? Email { get; set; }
         public DateTime? DataInscricao { get; set; }
-        public List<CursoModel?> Cursos { get; set; }
     }
 }

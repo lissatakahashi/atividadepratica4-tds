@@ -19,7 +19,16 @@ namespace tpte04.RazorPages.Data {
 
             modelBuilder.Entity<CursoModel>()
                 .HasMany(c => c.Alunos)
-                
+                .WithMany()
+                .UsingEntity<Dictionary<string, object>>(
+                    "CursoAluno",
+                    a => a.HasOne<AlunoModel>().WithMany().HasForeignKey("IdAluno"),
+                    c => c.HasOne<CursoModel>().WithMany().HasForeignKey("IdCurso"),
+                    cA =>
+                    {
+                        cA.HasKey("IdCurso", "IdAluno");
+                        cA.ToTable("CursosEAlunos");
+                    });
         }
     }
 }

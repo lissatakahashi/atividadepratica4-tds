@@ -8,6 +8,6 @@ namespace tpte04.RazorPages.Model {
         public string? Descricao { get; set; }
         public DateTime? DataInicio { get; set; }
         public DateTime? DataTermino { get; set; }
-        public List<AlunoModel?> Alunos { get; set; }
+        public List<AlunoModel>? Alunos { get; set; }
     }
 }
