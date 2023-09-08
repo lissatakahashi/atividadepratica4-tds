@@ -1,0 +1,19 @@
+@page "{id:int}"
+@model tpte04.RazorPages.Pages.Cursos.Details
+
+<h1>Alunos Inscritos</h1>
+
+<div>
+    <p><strong>Nome do curso:</strong> @Model.CursoModel.NomeCurso</p>
+
+    @foreach (var alunoModel in Model.CursoModel.Alunos!)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => alunoModel.IdAluno)</td>
+            <td>@Html.DisplayFor(model => alunoModel.NomeAluno)</td>
+            <br>
+        </tr>
+    }
+
+</div>
+

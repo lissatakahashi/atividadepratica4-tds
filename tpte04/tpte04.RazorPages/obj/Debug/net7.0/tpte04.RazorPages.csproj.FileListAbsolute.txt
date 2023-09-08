@@ -63,3 +63,4 @@ C:\Users\lilit\OneDrive\Documentos\faculdade\2023-2\tds\atividadepratica4-tds\tp
 C:\Users\lilit\OneDrive\Documentos\faculdade\2023-2\tds\atividadepratica4-tds\tpte04\tpte04.RazorPages\obj\Debug\net7.0\ref\tpte04.RazorPages.dll
 C:\Users\lilit\OneDrive\Documentos\faculdade\2023-2\tds\atividadepratica4-tds\tpte04\tpte04.RazorPages\obj\Debug\net7.0\tpte04.RazorPages.RazorAssemblyInfo.cache
 C:\Users\lilit\OneDrive\Documentos\faculdade\2023-2\tds\atividadepratica4-tds\tpte04\tpte04.RazorPages\obj\Debug\net7.0\tpte04.RazorPages.RazorAssemblyInfo.cs
+C:\Users\lilit\OneDrive\Documentos\faculdade\2023-2\tds\atividadepratica4-tds\tpte04\tpte04.RazorPages\bin\Debug\net7.0\tpte04.RazorPages.staticwebassets.runtime.json

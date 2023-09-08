@@ -1,0 +1,31 @@
+@page
+@model tpte04.RazorPages.Pages.Cursos.Alunos.Register
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <form method="post">
+        <div class="form-group">
+            <label for="curso">Curso:</label>
+            <select class="form-control" id="curso" name="curso">
+                @foreach (var cursoModel in Model.CursoList!)
+                {
+                    <option value="@cursoModel.IdCurso">@cursoModel.NomeCurso</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="aluno">Aluno:</label>
+            <select class="form-control" id="aluno" name="aluno">
+                @foreach (var alunoModel in Model.AlunoList!)
+                {
+                    <option value="@alunoModel.IdAluno">@alunoModel.NomeAluno</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
