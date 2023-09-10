@@ -1,8 +1,28 @@
 @page
 @model tpte04.RazorPages.Pages.Index
 
-<h1>Sistema de Gerenciamento de Cursos Online</h1>
+<link rel="stylesheet" href="~/css/style.css">
+
+<h1 id="titulo-principal">Sistema de Gerenciamento de Cursos Online</h1>
+
+<figure class="container-img">
+    <img src="~/images/livros.png" alt="livros" width="250" height="250" class="center">
+</figure>
 
 <div>
-    
+    <table class="table table-bordered table-striped table-hover-custom" id="dashboard">
+        <thead>
+            <tr>
+                <th>Total de cursos</th>
+                <th>Total de alunos</th>
+                <th>Curso com mais inscrições</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.TotalDeCursos</td>
+                <td>@Model.TotalDeAlunos</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

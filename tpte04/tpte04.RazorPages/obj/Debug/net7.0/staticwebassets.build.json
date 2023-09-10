@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6ZhHkJl/ntUVHw8jRG6uLPiBk+WvY9iNRdUzobonlK8=",
+  "Hash": "pQWwu7fJwXGWqr7NYkMdsbQTtUNVPP0KGauglSGfDs8=",
   "Source": "tpte04.RazorPages",
   "BasePath": "_content/tpte04.RazorPages",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\lilit\\OneDrive\\Documentos\\faculdade\\2023-2\\tds\\atividadepratica4-tds\\tpte04\\tpte04.RazorPages\\wwwroot\\css\\style.css",
+      "SourceId": "tpte04.RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lilit\\OneDrive\\Documentos\\faculdade\\2023-2\\tds\\atividadepratica4-tds\\tpte04\\tpte04.RazorPages\\wwwroot\\",
+      "BasePath": "_content/tpte04.RazorPages",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\lilit\\OneDrive\\Documentos\\faculdade\\2023-2\\tds\\atividadepratica4-tds\\tpte04\\tpte04.RazorPages\\wwwroot\\images\\livros.png",
+      "SourceId": "tpte04.RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lilit\\OneDrive\\Documentos\\faculdade\\2023-2\\tds\\atividadepratica4-tds\\tpte04\\tpte04.RazorPages\\wwwroot\\",
+      "BasePath": "_content/tpte04.RazorPages",
+      "RelativePath": "images/livros.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\livros.png"
+    },
     {
       "Identity": "C:\\Users\\lilit\\OneDrive\\Documentos\\faculdade\\2023-2\\tds\\atividadepratica4-tds\\tpte04\\tpte04.RazorPages\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "tpte04.RazorPages",

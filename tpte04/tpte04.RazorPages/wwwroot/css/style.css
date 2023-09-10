@@ -1,0 +1,16 @@
+#titulo-principal, footer {
+    text-align: center;
+}
+
+footer {
+    color: white;
+}
+
+.container-img {
+    text-align: center;
+}
+
+#dashboard {
+    width: 80%;
+    margin: auto;
+}
