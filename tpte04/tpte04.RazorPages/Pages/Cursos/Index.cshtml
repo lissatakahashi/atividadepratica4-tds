@@ -4,6 +4,10 @@
 <h1 class="display-4">Cursos Disponíveis</h1>
 
 <div>
+    @{
+        var cursosOrdenados = Model.CursoList.OrderBy(curso => curso.DataInicio);
+    }
+
     <table class="table table-bordered table-striped table-hover-custom">
         <thead>
             <tr>
@@ -15,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var cursoModel in Model.CursoList)
+            @foreach (var cursoModel in cursosOrdenados)
             {
                 <tr>
                     <td>@Html.DisplayFor(model => cursoModel.IdCurso)</td>

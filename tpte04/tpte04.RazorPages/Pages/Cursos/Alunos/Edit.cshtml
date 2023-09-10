@@ -1,17 +1,17 @@
-@page
-@model tpte04.RazorPages.Pages.Alunos.Create
+@page "{id:int}"
+@model tpte04.RazorPages.Pages.Alunos.Edit
 
-<h1>Cadastro de Aluno</h1>
+<h1>Editar Aluno</h1>
 
 <hr>
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-dange"></div>
-            <input type="hidden" asp-for="AlunoModel.IdAluno"/>
+            <input type="hidden" asp-for="AlunoModel.IdAluno">
             <div class="form-group">
                 <label asp-for="AlunoModel.NomeAluno"></label>
-                <input asp-for="AlunoModel.NomeAluno" class="form-control" required/>
+                <input asp-for="AlunoModel.NomeAluno" class="form-control" required>
                 <span asp-validation-for="AlunoModel.NomeAluno" class="text-dange"></span>
             </div>
             <div class="form-group">
@@ -21,8 +21,8 @@
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Cadastrar"/>
-                <a asp-page="/Index" class="btn btn-secondary">Cancelar</a>
+                <input type="submit" class="btn btn-primary" value="Salvar">
+                <a asp-page="/Cursos/Alunos/Index" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
     </div>

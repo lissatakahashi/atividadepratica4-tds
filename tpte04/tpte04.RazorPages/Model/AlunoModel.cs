@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace tpte04.RazorPages.Model {
     public class AlunoModel {
         public int? IdAluno { get; set; }
