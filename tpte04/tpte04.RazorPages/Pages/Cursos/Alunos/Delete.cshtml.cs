@@ -44,7 +44,7 @@ namespace tpte04.RazorPages.Pages.Cursos.Alunos
             try {
                 _context.Alunos.Remove(alunoToDelete);
                 await _context.SaveChangesAsync();
-                return RedirectToPage("/Cursos/Index");
+                return RedirectToPage("/Cursos/Alunos/Index");
             } catch (DbUpdateException) {
                 return Page();
             }

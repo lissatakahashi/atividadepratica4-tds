@@ -12,12 +12,17 @@
             <div class="form-group">
                 <label asp-for="AlunoModel.NomeAluno"></label>
                 <input asp-for="AlunoModel.NomeAluno" class="form-control" placeholder="Nome do aluno" required/>
-                <span asp-validation-for="AlunoModel.NomeAluno" class="text-dange"></span>
+                <span asp-validation-for="AlunoModel.NomeAluno" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AlunoModel.Email"></label>
                 <input type="email" asp-for="AlunoModel.Email" class="form-control" placeholder="E-mail" required>
-                <span asp-validation-for="AlunoModel.Email" class="text-dange"></span>
+                <span asp-validation-for="AlunoModel.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlunoModel.DataInscricao"></label>
+                <input asp-for="AlunoModel.DataInscricao" type="date" class="form-control" value="@DateTime.Now">
+                <span asp-validation-for="AlunoModel.DataInscricao" class="text-danger"></span>
             </div>
             <br>
             <div class="form-group">
