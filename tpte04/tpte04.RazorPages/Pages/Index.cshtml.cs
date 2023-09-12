@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using tpte04.RazorPages.Data;
-using tpte04.RazorPages.Model;
 
 namespace tpte04.RazorPages.Pages
 {

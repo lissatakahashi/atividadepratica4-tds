@@ -25,7 +25,7 @@ namespace tpte04.RazorPages.Pages.Cursos
             try {
                 _context.Add(CursoModel);
                 await _context.SaveChangesAsync();
-                return RedirectToPage("/Cursos/Create");
+                return RedirectToPage("/Cursos/Index");
             } catch(DbUpdateException) {
                 return Page();
             }
